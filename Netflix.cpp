@@ -6,6 +6,8 @@ void titleColor(int color);
 void welcomeScreen();
 void trendingNow();
 void showMovieDetail(int category, int movie);
+void browseMoviesByGenre();
+
 
 void welcomeScreen()
 {
@@ -68,7 +70,7 @@ void menu()
                 break;
 
             case 2:
-                cout << "\nBrowse Movies by Genre\n";
+                browseMoviesByGenre();
                 break;
 
             case 3:
@@ -380,6 +382,264 @@ void trendingNow()
     cin >> movie;
 
     showMovieDetail(category, movie);
+}
+
+void browseMoviesByGenre()
+{
+    system("cls");
+
+    int genre, movie;
+
+    cout << "\n===============================================================\n";
+    cout << "                    BROWSE MOVIES BY GENRE";
+    cout << "\n===============================================================\n";
+    cout << "Choose a genre to explore Netflix movies.\n\n";
+    cout << "1. Action\n";
+    cout << "2. Comedy\n";
+    cout << "3. Drama\n";
+    cout << "4. Horror\n";
+    cout << "5. Sci-Fi\n";
+    cout << "6. Thriller\n";
+    cout << "7. Back to Main Menu\n";
+    cout << "\nEnter genre: ";
+    cin >> genre;
+
+    if (genre == 1)
+    {
+        system("cls");
+
+        cout << "\n====================== ACTION MOVIES ======================\n";
+        cout << "1. Red Notice\n";
+        cout << "2. The Gray Man\n";
+        cout << "3. Troll\n";
+        cout << "4. Exterritorial\n";
+        cout << "5. Counterattack\n";
+        cout << "6. Back to Main Menu\n";
+        cout << "\nSelect movie number: ";
+        cin >> movie;
+
+        if (movie == 1)
+        {
+            showMovieDetail(1, 2);
+        } 
+        else if (movie == 2)
+        {
+            showMovieDetail(1, 10);
+        } 
+        else if (movie == 3)
+        {
+            showMovieDetail(2, 1);
+        } 
+        else if (movie == 4)
+        {
+            showMovieDetail(2, 4);
+        } 
+        else if (movie == 5)
+        {
+            showMovieDetail(2, 8);
+        }
+        else if (movie == 6)
+        {
+            return;
+        } 
+        else
+        {
+            cout << "\nInvalid movie selection!\n";
+        } 
+    }
+    else if (genre == 2)
+    {
+        system("cls");
+
+        cout << "\n====================== COMEDY MOVIES ======================\n";
+        cout << "1. Red Notice\n";
+        cout << "2. Back in Action\n";
+        cout << "3. Back to Main Menu\n";
+        cout << "\nSelect movie number: ";
+        cin >> movie;
+
+        if (movie == 1)
+        {
+            showMovieDetail(1, 2);
+        } 
+        else if (movie == 2)
+        {
+            showMovieDetail(1, 7);
+        }
+        else if (movie == 3)
+        {
+            return;
+        }
+        else
+        {
+            cout << "\nInvalid movie selection!\n";
+        }
+    }
+    else if (genre == 3)
+    {
+        system("cls");
+
+        cout << "\n====================== DRAMA MOVIES ======================\n";
+        cout << "1. Don't Look Up\n";
+        cout << "2. Leave The World Behind\n";
+        cout << "3. Society of The Snow\n";
+        cout << "4. Nowhere\n";
+        cout << "5. Ad Vitam\n";
+        cout << "6. Back to Main Menu\n";
+        cout << "\nSelect movie number: ";
+        cin >> movie;
+
+        if (movie == 1)
+        {
+            showMovieDetail(1, 4);
+        }
+        else if (movie == 2)
+        {
+            showMovieDetail(1, 8);
+        }
+        else if (movie == 3)
+        {
+            showMovieDetail(2, 3);
+        }
+        else if (movie == 4)
+        {
+            showMovieDetail(2, 6);
+        }
+        else if (movie == 5)
+        {
+            showMovieDetail(2, 9);
+        }
+        else if (movie == 6)
+        {
+            return;
+        }
+        else
+        {
+            cout << "\nInvalid movie selection!\n";
+        }
+    }
+    else if (genre == 4)
+    {
+        system("cls");
+
+        cout << "\n====================== HORROR MOVIES ======================\n";
+        cout << "1. Bird Box\n";
+        cout << "2. Under Paris\n";
+        cout << "3. Back to Main Menu\n";
+        cout << "\nSelect movie number: ";
+        cin >> movie;
+
+        if (movie == 1)
+        {
+            showMovieDetail(1, 6);
+        }
+        else if (movie == 2)
+        {
+            showMovieDetail(2, 2);
+        }
+        else if (movie == 3)
+        {
+            return;
+        }
+        else
+        {
+            cout << "\nInvalid movie selection!\n";
+        }
+    }
+    else if (genre == 5)
+    {
+        system("cls");
+
+        cout << "\n====================== SCI-FI MOVIES ======================\n";
+        cout << "1. The Adam Project\n";
+        cout << "2. War Machine\n";
+        cout << "3. The Great Flood\n";
+        cout << "4. Back to Main Menu\n";
+        cout << "\nSelect movie number: ";
+        cin >> movie;
+
+        if (movie == 1)
+        {
+            showMovieDetail(1, 5);
+        }
+        else if (movie == 2)
+        {
+            showMovieDetail(1, 9);
+        }
+        else if (movie == 3)
+        {
+            showMovieDetail(2, 5);
+        }
+        else if (movie == 4)
+        {
+            return;
+        }
+        else
+        {
+            cout << "\nInvalid movie selection!\n";
+        }
+    }
+    else if (genre == 6)
+    {
+        system("cls");
+
+        cout << "\n====================== THRILLER MOVIES ======================\n";
+        cout << "1. Carry-On\n";
+        cout << "2. Bird Box\n";
+        cout << "3. Leave The World Behind\n";
+        cout << "4. Under Paris\n";
+        cout << "5. Nowhere\n";
+        cout << "6. The Platform\n";
+        cout << "7. Brick\n";
+        cout << "8. Back to Main Menu\n";
+        cout << "\nSelect movie number: ";
+        cin >> movie;
+
+        if (movie == 1)
+        {
+            showMovieDetail(1, 3);
+        }
+        else if (movie == 2)
+        {
+            showMovieDetail(1, 6);
+        }
+        else if (movie == 3)
+        {
+            showMovieDetail(1, 8);
+        }
+        else if (movie == 4)
+        {
+            showMovieDetail(2, 2);
+        }
+        else if (movie == 5)
+        {
+            showMovieDetail(2, 6);
+        }
+        else if (movie == 6)
+        {
+            showMovieDetail(2, 7);
+        }
+        else if (movie == 7)
+        {
+            showMovieDetail(2, 10);
+        }
+        else if (movie == 8)
+        {
+            return;
+        }
+        else
+        {
+            cout << "\nInvalid movie selection!\n";
+        }
+    }
+    else if (genre == 7)
+    {
+        return;
+    }
+    else
+    {
+        cout << "\nInvalid genre selection!\n";
+    }
 }
 
 int main()
