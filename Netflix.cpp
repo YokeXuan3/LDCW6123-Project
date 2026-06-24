@@ -85,7 +85,7 @@ void menu()
 
         if(choice != 4)
         {
-            cout << "\n\nPress ENTER to return to Main Menu...";
+            cout << "\nPress ENTER to return to Main Menu...";
             cin.ignore();
             cin.get();
         }
@@ -95,16 +95,16 @@ void menu()
 
 void showMovieDetail(int category, int movie)
 {
-    if (category == 1) //Action
+    if (category == 1) //English
     {
         if (movie == 1)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Sky Fall 007 2";
-            cout << "\nGenre  : Action & Adventure Movies";
-            cout << "\nRating : 7.8/10\n";
+        	cout << "\nTitle  : KPOP Demon Hunters";
+            cout << "\nGenre  : Music, Family Movies, Kids & Family Movies";
+            cout << "\nRating : 7.4/10\n";
             cout << "===============================================================\n";
 		}
         else if (movie == 2)
@@ -112,9 +112,9 @@ void showMovieDetail(int category, int movie)
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Spider-Man Homecoming";
-            cout << "\nGenre  : Action & Adventure Movies";
-            cout << "\nRating : 7.4/10\n";
+        	cout << "\nTitle  : Red Notice";
+            cout << "\nGenre  : US, Crime Movies, Comedy Movies";
+            cout << "\nRating : 6.3/10\n";
             cout << "===============================================================\n";
 		}
         else if (movie == 3)
@@ -122,33 +122,12 @@ void showMovieDetail(int category, int movie)
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : The Lord of The Rings: The Return of The King";
-            cout << "\nGenre  : Action & Adventure Movies";
-            cout << "\nRating : 9/10\n";
+        	cout << "\nTitle  : Carry-On";
+            cout << "\nGenre  : US, Thriller Movies";
+            cout << "\nRating : 6.5/10\n";
             cout << "===============================================================\n";
 		}
         else if (movie == 4)
-        {
-        	cout << "\n===============================================================\n";
-        	cout << "                         MOVIE DETAILS\n";
-        	cout << "===============================================================";
-        	cout << "\nTitle  : The Lord of The Rings: The Fellowship of The Ring";
-            cout << "\nGenre  : Action & Adventure Movies";
-            cout << "\nRating : 8.9/10\n";
-            cout << "===============================================================\n";
-		}
-		else if (movie == 5)
-		{
-		    return;
-		}
-        else
-        {
-        	cout << "\nInvalid movie selection!\n";
-		}
-    }
-    else if (category == 2) //Drama
-    {
-        if (movie == 1)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
@@ -158,55 +137,85 @@ void showMovieDetail(int category, int movie)
 			cout << "\nRating : 7.1/10\n";
             cout << "===============================================================\n";
 		}
-        else if (movie == 2)
-        {
-        	cout << "\n===============================================================\n";
-        	cout << "                         MOVIE DETAILS\n";
-        	cout << "===============================================================";
-        	cout << "\nTitle  : Remarkably Bright Creatures";
-			cout << "\nGenre  : Drama Movies";
-			cout << "\nRating : 7.7/10\n";
-            cout << "===============================================================\n";
-		}
-        else if (movie == 3)
-        {
-        	cout << "\n===============================================================\n";
-        	cout << "                         MOVIE DETAILS\n";
-        	cout << "===============================================================";
-        	cout << "\nTitle  : Love Untangled";
-			cout << "\nGenre  : Drama Movies";
-			cout << "\nRating : 7.1/10\n";
-            cout << "===============================================================\n";
-		}
-        else if (movie == 4)
-        {
-        	cout << "\n===============================================================\n";
-        	cout << "                         MOVIE DETAILS\n";
-        	cout << "===============================================================";
-        	cout << "\nTitle  : Even If This Love Disappears Tonight";
-			cout << "\nGenre  : Drama Movies";
-			cout << "\nRating : 7.5/10\n";
-            cout << "===============================================================\n";
-		}
 		else if (movie == 5)
+        {
+        	cout << "\n===============================================================\n";
+        	cout << "                         MOVIE DETAILS\n";
+        	cout << "===============================================================";
+        	cout << "\nTitle  : The Adam Project";
+            cout << "\nGenre  : Family Movies, US, Sci-Fi Movies";
+            cout << "\nRating : 6.7/10\n";
+            cout << "===============================================================\n";
+		}
+		else if (movie == 6)
+        {
+        	cout << "\n===============================================================\n";
+        	cout << "                         MOVIE DETAILS\n";
+        	cout << "===============================================================";
+        	cout << "\nTitle  : Bird Box";
+            cout << "\nGenre  : US, Horror Movies, Thriller Movies";
+            cout << "\nRating : 6.6/10\n";
+            cout << "===============================================================\n";
+		}
+		else if (movie == 7)
+        {
+        	cout << "\n===============================================================\n";
+        	cout << "                         MOVIE DETAILS\n";
+        	cout << "===============================================================";
+        	cout << "\nTitle  : Back in Action";
+            cout << "\nGenre  : US, Comedy Movies, Action & Adventure Movies";
+            cout << "\nRating : 5.9/10\n";
+            cout << "===============================================================\n";
+		}
+		else if (movie == 8)
+        {
+        	cout << "\n===============================================================\n";
+        	cout << "                         MOVIE DETAILS\n";
+        	cout << "===============================================================";
+        	cout << "\nTitle  : Leave The World Behind";
+            cout << "\nGenre  : US, Drama Movies, Thriller Movies";
+            cout << "\nRating : 6.4/10\n";
+            cout << "===============================================================\n";
+		}
+		else if (movie == 9)
+        {
+        	cout << "\n===============================================================\n";
+        	cout << "                         MOVIE DETAILS\n";
+        	cout << "===============================================================";
+        	cout << "\nTitle  : War Machine";
+            cout << "\nGenre  : US, Sci-Fi Movies, Military Movies";
+            cout << "\nRating : 6.3/10\n";
+            cout << "===============================================================\n";
+		}
+		else if (movie == 10)
+        {
+        	cout << "\n===============================================================\n";
+        	cout << "                         MOVIE DETAILS\n";
+        	cout << "===============================================================";
+        	cout << "\nTitle  : The Gray Man";
+            cout << "\nGenre  : US, Movies Based on Books, Action & Adventure Movies";
+            cout << "\nRating : 6.5/10\n";
+            cout << "===============================================================\n";
+		}
+		else if (movie == 11)
 		{
 		    return;
 		}
-		else
-		{
+        else
+        {
         	cout << "\nInvalid movie selection!\n";
 		}
     }
-    else if (category == 3) //Comedy
+    else if (category == 2) //Non-English
     {
         if (movie == 1)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Knives Out";
-			cout << "\nGenre  : Comedy Movies";
-			cout << "\nRating : 7.9/10\n";
+        	cout << "\nTitle  : Troll";
+            cout << "\nGenre  : Norwegian, Action & Adventure Movies";
+			cout << "\nRating : 5.8/10\n";
             cout << "===============================================================\n";
 		}
         else if (movie == 2)
@@ -214,9 +223,9 @@ void showMovieDetail(int category, int movie)
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Class Onion: A Knives Out Mystery";
-			cout << "\nGenre  : Comedy Movies";
-			cout << "\nRating : 7.1/10\n";
+        	cout << "\nTitle  : Under Paris";
+			cout << "\nGenre  : French, Horror Movies, Thriller Movies";
+			cout << "\nRating : 5.2/10\n";
             cout << "===============================================================\n";
 		}
         else if (movie == 3)
@@ -224,59 +233,8 @@ void showMovieDetail(int category, int movie)
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Pitch Perfect";
-			cout << "\nGenre  : Comedy Movies";
-			cout << "\nRating : 7.1/10\n";
-            cout << "===============================================================\n";
-		}
-        else if (movie == 4)
-        {
-        	cout << "\n===============================================================\n";
-        	cout << "                         MOVIE DETAILS\n";
-        	cout << "===============================================================";
-			cout << "\nTitle  : Voicemails for Isabelle";
-			cout << "\nGenre  : Comedy Movies";
-			cout << "\nRating : 7.5/10\n";
-            cout << "===============================================================\n";
-		}
-		else if (movie == 5)
-		{
-		    return;
-		}
-		else
-		{
-        	cout << "\nInvalid movie selection!\n";
-		}
-    }
-    else if (category == 4) //Anime
-    {
-        if (movie == 1)
-        {
-        	cout << "\n===============================================================\n";
-        	cout << "                         MOVIE DETAILS\n";
-        	cout << "===============================================================";
-        	cout << "\nTitle  : Howl's Moving Castle";
-			cout << "\nGenre  : Action Anime";
-			cout << "\nRating : 8.2/10\n";
-            cout << "===============================================================\n";
-		}
-        else if (movie == 2)
-        {
-        	cout << "\n===============================================================\n";
-        	cout << "                         MOVIE DETAILS\n";
-        	cout << "===============================================================";
-        	cout << "\nTitle  : Spirited Away";
-			cout << "\nGenre  : Fantasy Anime";
-			cout << "\nRating : 8.6/10\n";
-            cout << "===============================================================\n";
-		}
-        else if (movie == 3)
-        {
-        	cout << "\n===============================================================\n";
-        	cout << "                         MOVIE DETAILS\n";
-        	cout << "===============================================================";
-        	cout << "\nTitle  : Haikyu!!: The Dumpster Battle";
-			cout << "\nGenre  : Drama Anime";
+        	cout << "\nTitle  : Society of The Snow";
+			cout << "\nGenre  : Spanish, Drama Movies, Movies Based on Books";
 			cout << "\nRating : 7.8/10\n";
             cout << "===============================================================\n";
 		}
@@ -285,12 +243,72 @@ void showMovieDetail(int category, int movie)
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : The First Slam Dunk";
-			cout << "\nGenre  : Drama Anime";
-			cout << "\nRating : 8/10\n";
+        	cout << "\nTitle  : Exterritorial";
+			cout << "\nGenre  : German, Action & Adventure Movies";
+			cout << "\nRating : 5.8/10\n";
             cout << "===============================================================\n";
 		}
 		else if (movie == 5)
+        {
+        	cout << "\n===============================================================\n";
+        	cout << "                         MOVIE DETAILS\n";
+        	cout << "===============================================================";
+        	cout << "\nTitle  : The Great Flood";
+			cout << "\nGenre  : Korean, Sci-Fi Movies, Drama Movies";
+			cout << "\nRating : 5.4/10\n";
+            cout << "===============================================================\n";
+		}
+		else if (movie == 6)
+        {
+        	cout << "\n===============================================================\n";
+        	cout << "                         MOVIE DETAILS\n";
+        	cout << "===============================================================";
+        	cout << "\nTitle  : Nowhere";
+			cout << "\nGenre  : Spanish, Drama Movies, Thriller Movies";
+			cout << "\nRating : 6.3/10\n";
+            cout << "===============================================================\n";
+		}
+		else if (movie == 7)
+        {
+        	cout << "\n===============================================================\n";
+        	cout << "                         MOVIE DETAILS\n";
+        	cout << "===============================================================";
+        	cout << "\nTitle  : The Platform";
+			cout << "\nGenre  : Spanish, Thriller Movies";
+			cout << "\nRating : 7/10\n";
+            cout << "===============================================================\n";
+		}
+		else if (movie == 8)
+        {
+        	cout << "\n===============================================================\n";
+        	cout << "                         MOVIE DETAILS\n";
+        	cout << "===============================================================";
+        	cout << "\nTitle  : Counterattack";
+			cout << "\nGenre  : Mexican, Military Movies, Action & Adventure Movies";
+			cout << "\nRating : 6/10\n";
+            cout << "===============================================================\n";
+		}
+		else if (movie == 9)
+        {
+        	cout << "\n===============================================================\n";
+        	cout << "                         MOVIE DETAILS\n";
+        	cout << "===============================================================";
+        	cout << "\nTitle  : Ad Vitam";
+			cout << "\nGenre  : French, Crime Movies, Drama Movies";
+			cout << "\nRating : 5.9/10\n";
+            cout << "===============================================================\n";
+		}
+		else if (movie == 10)
+        {
+        	cout << "\n===============================================================\n";
+        	cout << "                         MOVIE DETAILS\n";
+        	cout << "===============================================================";
+        	cout << "\nTitle  : Brick";
+			cout << "\nGenre  : German, Thriller Movies, Mystery Movies";
+			cout << "\nRating : 5.5/10\n";
+            cout << "===============================================================\n";
+		}
+		else if (movie == 11)
 		{
 		    return;
 		}
@@ -305,60 +323,50 @@ void trendingNow()
 {
     int category, movie;
 
-    cout << "\n============= TRENDING NOW =============\n";
-    cout << "1. Action & Adventure Movies\n";
-    cout << "2. Drama Movies\n";
-    cout << "3. Comedy Movies\n";
-    cout << "4. Anime Movies\n";
-	cout << "5. Back to Main Menu\n";
+    cout << "\n===============================================================\n";
+    cout << "                        TRENDING NOW MOVIES";
+    cout << "\n===============================================================\n";
+    cout << "1. Movies | English\n";
+    cout << "2. Movies | Non-English\n";
+	cout << "3. Back to Main Menu\n";
     cout << "\nEnter category: ";
     cin >> category;
 
     if (category == 1)
     {
     	cout << "\n===============================================================\n";
-        cout << "              ACTION & ADVENTURE TRENDING MOVIES\n";
+        cout << "                     TOP 10 ENGLISH MOVIES\n";
     	cout << "===============================================================\n";
-        cout << "1. Sky Fall 007\n";
-		cout << "2. Spider-Man Homecoming\n";
-		cout << "3. The Lord of The Rings: The Return of The King\n";
-		cout << "4. The Lord of The Rings: The Fellowship of The Ring\n";
-		cout << "5. Back to Main Menu\n";
+        cout << "1.  KPOP Demon Hunters\n";
+		cout << "2.  Red Notice\n";
+		cout << "3.  Carry-On\n";
+        cout << "4.  Don't Look up\n";
+        cout << "5.  The Adam Project\n";
+        cout << "6.  Bird Box\n";
+        cout << "7.  Back in Action\n";
+        cout << "8.  Leave The World Behind\n";
+        cout << "9.  War Machine\n";
+        cout << "10. The Gray Man\n";
+		cout << "\n11. Back to Main Menu\n";
     }
     else if (category == 2)
     {
     	cout << "\n===============================================================\n";
-        cout << "                     DRAMA TRENDING MOVIES\n";
+        cout << "                   TOP 10 NON-ENGLISH MOVIES\n";
     	cout << "===============================================================\n";
-        cout << "1. Don't Look up\n";
-		cout << "2. Remarkably Bright Creatures\n";
-		cout << "3. Love Untangled\n";
-		cout << "4. Even If This Love Disappears Tonight\n";
-		cout << "5. Back to Main Menu\n";
+        cout << "1.  Troll\n";
+        cout << "2.  Under Paris\n";
+        cout << "3.  Society of The Snow\n";
+        cout << "4.  Exterritorial\n";
+        cout << "5.  The Great Flood\n";
+        cout << "6.  Nowhere\n";
+        cout << "7.  The Platform\n";
+        cout << "8.  Counterattack\n";
+        cout << "9.  Ad Vitam\n";
+        cout << "10. Brick\n";
+		cout << "\n11. Back to Main Menu\n";
     }
     else if (category == 3)
-    {
-    	cout << "\n===============================================================\n";
-        cout << "                    COMEDY TRENDING MOVIES\n";
-    	cout << "===============================================================\n";
-        cout << "1. Knives Out\n";
-		cout << "2. Class Onion: A Knives Out Mystery\n";
-		cout << "3. Pitch Perfect\n";
-		cout << "4. Voicemails for Isabelle\n";
-		cout << "5. Back to Main Menu\n";
-    }
-    else if (category == 4)
-    {
-    	cout << "\n===============================================================\n";
-        cout << "                     ANIME TRENDING MOVIES\n";
-    	cout << "===============================================================\n";
-        cout << "1. Howl's Moving Castle\n";
-		cout << "2. Spirited Away\n";
-		cout << "3. Haikyu!!: The Dumpster Battle\n";
-		cout << "4. The First Slam Dunk\n";
-		cout << "5. Back to Main Menu\n";
-    }
-    else if (category == 5)
     {
         return;
     }
