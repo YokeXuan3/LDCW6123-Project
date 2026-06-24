@@ -60,8 +60,17 @@ void menu()
         cout << "  4. Exit\n\n";
 
         cout << "========================================================\n";
-        cout << " Enter your choice (1-4): ";
-        cin >> choice;
+        do
+        {
+            cout << " Enter your choice (1-4): ";
+            cin >> choice;
+
+            if(choice < 1 || choice > 4)
+            {
+                cout << "\nInvalid choice! Please try again.\n";
+            }
+
+        }while(choice < 1 || choice > 4);
 
         switch(choice)
         {
@@ -335,8 +344,17 @@ void trendingNow()
     cout << "1. Movies | English\n";
     cout << "2. Movies | Non-English\n";
 	cout << "3. Back to Main Menu\n";
-    cout << "\nEnter category: ";
-    cin >> category;
+    do
+    {
+        cout << "\nEnter category (1-3): ";
+        cin >> category;
+
+        if(category < 1 || category > 3)
+        {
+            cout << "\nInvalid category! Please try again.\n";
+        }
+
+    }while(category < 1 || category > 3);
 
     if (category == 1)
     {
@@ -378,14 +396,36 @@ void trendingNow()
     }
 	else
     {
-        cout << "Invalid category!\n";
+        cout << "\nInvalid category!\n";
+
+        cout << "\nPress ENTER to try again...";
+        cin.ignore();
+        cin.get();
+
+        trendingNow();
         return;
     }
 
-    cout << "\nSelect movie number: ";
-    cin >> movie;
+    int maxMovie;
 
-    showMovieDetail(category, movie);
+    if(category == 1 || category == 2)
+    {
+        maxMovie = 11;
+    }
+
+    do
+    {
+        cout << "\nSelect movie number: ";
+        cin >> movie;
+
+        if(movie < 1 || movie > maxMovie)
+        {
+            cout << "\nInvalid movie selection! Please try again.\n";
+        }
+
+    }while(movie < 1 || movie > maxMovie);
+
+        showMovieDetail(category, movie);
 }
 
 void browseMoviesByGenre()
@@ -405,8 +445,17 @@ void browseMoviesByGenre()
     cout << "5. Sci-Fi\n";
     cout << "6. Thriller\n";
     cout << "7. Back to Main Menu\n";
-    cout << "\nEnter genre: ";
-    cin >> genre;
+    do
+    {
+        cout << "\nEnter genre (1-7): ";
+        cin >> genre;
+
+        if(genre < 1 || genre > 7)
+        {
+            cout << "\nInvalid genre selection! Please try again.\n";
+        }
+
+    }while(genre < 1 || genre > 7);
 
     if (genre == 1)
     {
@@ -419,8 +468,17 @@ void browseMoviesByGenre()
         cout << "4. Exterritorial\n";
         cout << "5. Counterattack\n";
         cout << "6. Back to Main Menu\n";
-        cout << "\nSelect movie number: ";
-        cin >> movie;
+        do
+        {
+            cout << "\nSelect movie number (1-6): ";
+            cin >> movie;
+
+            if(movie < 1 || movie > 6)
+            {
+                cout << "\nInvalid movie selection! Please try again.\n";
+            }
+
+        }while(movie < 1 || movie > 6);
 
         if (movie == 1)
         {
@@ -459,8 +517,17 @@ void browseMoviesByGenre()
         cout << "1. Red Notice\n";
         cout << "2. Back in Action\n";
         cout << "3. Back to Main Menu\n";
-        cout << "\nSelect movie number: ";
-        cin >> movie;
+        do
+        {
+            cout << "\nSelect movie number (1-3): ";
+            cin >> movie;
+
+            if(movie < 1 || movie > 3)
+            {
+                cout << "\nInvalid movie selection! Please try again.\n";
+            }
+
+        }while(movie < 1 || movie > 3);
 
         if (movie == 1)
         {
@@ -490,8 +557,17 @@ void browseMoviesByGenre()
         cout << "4. Nowhere\n";
         cout << "5. Ad Vitam\n";
         cout << "6. Back to Main Menu\n";
-        cout << "\nSelect movie number: ";
-        cin >> movie;
+        do
+        {
+            cout << "\nSelect movie number (1-6): ";
+            cin >> movie;
+
+            if(movie < 1 || movie > 3)
+            {
+                cout << "\nInvalid movie selection! Please try again.\n";
+            }
+
+        }while(movie < 1 || movie > 6);
 
         if (movie == 1)
         {
@@ -530,8 +606,17 @@ void browseMoviesByGenre()
         cout << "1. Bird Box\n";
         cout << "2. Under Paris\n";
         cout << "3. Back to Main Menu\n";
-        cout << "\nSelect movie number: ";
-        cin >> movie;
+        do
+        {
+            cout << "\nSelect movie number (1-3): ";
+            cin >> movie;
+
+            if(movie < 1 || movie > 3)
+            {
+                cout << "\nInvalid movie selection! Please try again.\n";
+            }
+
+        }while(movie < 1 || movie > 3);
 
         if (movie == 1)
         {
@@ -559,8 +644,17 @@ void browseMoviesByGenre()
         cout << "2. War Machine\n";
         cout << "3. The Great Flood\n";
         cout << "4. Back to Main Menu\n";
-        cout << "\nSelect movie number: ";
-        cin >> movie;
+        do
+        {
+            cout << "\nSelect movie number (1-4): ";
+            cin >> movie;
+
+            if(movie < 1 || movie > 4)
+            {
+                cout << "\nInvalid movie selection! Please try again.\n";
+            }
+
+        }while(movie < 1 || movie > 4);
 
         if (movie == 1)
         {
@@ -596,8 +690,17 @@ void browseMoviesByGenre()
         cout << "6. The Platform\n";
         cout << "7. Brick\n";
         cout << "8. Back to Main Menu\n";
-        cout << "\nSelect movie number: ";
-        cin >> movie;
+        do
+        {
+            cout << "\nSelect movie number (1-8): ";
+            cin >> movie;
+
+            if(movie < 1 || movie > 8)
+            {
+                cout << "\nInvalid movie selection! Please try again.\n";
+            }
+
+        }while(movie < 1 || movie > 8);
 
         if (movie == 1)
         {
@@ -643,6 +746,13 @@ void browseMoviesByGenre()
     else
     {
         cout << "\nInvalid genre selection!\n";
+
+        cout << "\nPress ENTER to try again...";
+        cin.ignore();
+        cin.get();
+
+        browseMoviesByGenre();
+        return;
     }
 }
 
