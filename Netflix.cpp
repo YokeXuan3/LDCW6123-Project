@@ -57,7 +57,7 @@ void menu()
         cout << "  3. Search Movie\n";
         cout << "  4. Exit\n\n";
 
-        cout << "==============================================================\n";
+        cout << "========================================================\n";
         cout << " Enter your choice (1-4): ";
         cin >> choice;
 
@@ -323,9 +323,13 @@ void trendingNow()
 {
     int category, movie;
 
-    cout << "\n===============================================================\n";
-    cout << "                        TRENDING NOW MOVIES";
-    cout << "\n===============================================================\n";
+    system("cls");
+
+    cout << "=====================================================\n";
+    titleColor(12);
+    cout << "               TRENDING NOW \n";
+    titleColor(7);
+    cout << "=====================================================\n\n";
     cout << "1. Movies | English\n";
     cout << "2. Movies | Non-English\n";
 	cout << "3. Back to Main Menu\n";
