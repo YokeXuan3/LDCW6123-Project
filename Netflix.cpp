@@ -478,9 +478,9 @@ void browseMoviesByGenre()
 
     int genre, movie;
 
-    cout << "\n===============================================================\n";
+    cout << "\n---------------------------------------------------------------\n";
     cout << "                    BROWSE MOVIES BY GENRE";
-    cout << "\n===============================================================\n";
+    cout << "\n---------------------------------------------------------------\n";
     cout << "Choose a genre to explore Netflix movies.\n\n";
     cout << "[1] Action\n";
     cout << "[2] Comedy\n";
