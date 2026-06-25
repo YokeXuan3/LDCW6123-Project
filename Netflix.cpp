@@ -341,8 +341,8 @@ void trendingNow()
     cout << "               TRENDING NOW \n";
     titleColor(7);
     cout << "=====================================================\n\n";
-    cout << "1. Movies | English\n";
-    cout << "2. Movies | Non-English\n";
+    cout << "1. English Movies\n";
+    cout << "2. Non-English Movies\n";
 	cout << "3. Back to Main Menu\n";
     do
     {
@@ -426,6 +426,28 @@ void trendingNow()
     }while(movie < 1 || movie > maxMovie);
 
         showMovieDetail(category, movie);
+
+        int option;
+
+        cout << "\n";
+        cout << "1. Back to Trending Now\n";
+        cout << "2. Back to Main Menu\n";
+
+        cout << "Enter your choice: ";
+        cin >> option;
+
+        if(option == 1)
+        {
+            trendingNow();
+        }
+        else if(option == 2)
+        {
+            return;
+        }
+        else
+        {
+            cout << "\nInvalid choice!\n";
+        }
 }
 
 void browseMoviesByGenre()
