@@ -465,6 +465,17 @@ void browseMoviesByGenre()
 {
     system("cls");
 
+    cout << "Loading Netflix";
+    Sleep(300);
+    cout << ".";
+    Sleep(300);
+    cout << ".";
+    Sleep(300);
+    cout << ".";
+    Sleep(300);
+
+    system("cls");
+
     int genre, movie;
 
     cout << "\n===============================================================\n";
