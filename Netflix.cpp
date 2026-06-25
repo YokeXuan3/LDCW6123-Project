@@ -113,100 +113,142 @@ void showMovieDetail(int category, int movie)
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : KPOP Demon Hunters";
-            cout << "\nGenre  : Music, Family Movies, Kids & Family Movies";
-            cout << "\nRating : 7.4/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle         : KPOP Demon Hunters";
+            cout << "\nGenre         : Music, Family Movies, Kids & Family Movies";
+            cout << "\nRating        : 7.4/10\n";
+            cout << "\nSynopsis      : A world-renowned K-pop girl group balances";
+            cout << "\n                their lives in the spotlight while secretly";
+            cout << "\n                fighting demons to protect humanity.\n";
+            cout << "\n===============================================================\n";
 		}
         else if (movie == 2)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
-        	cout << "===============================================================";
-        	cout << "\nTitle  : Red Notice";
-            cout << "\nGenre  : US, Crime Movies, Comedy Movies";
-            cout << "\nRating : 6.3/10\n";
-            cout << "===============================================================\n";
+        	cout << "=================================================================";
+        	cout << "\nTitle    : Red Notice";
+            cout << "\nGenre    : US, Crime Movies, Comedy Movies";
+            cout << "\nRating   : 6.3/10\n";
+            cout << "\nSynopsis : An Interpol agent teams up with a rival";
+            cout << "\n           art thief to capture the world's most";
+            cout << "\n           wanted criminal. However, unexpected";
+            cout << "\n           betrayals change everything.";
+            cout << "\n=================================================================\n";
 		}
         else if (movie == 3)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Carry-On";
-            cout << "\nGenre  : US, Thriller Movies";
-            cout << "\nRating : 6.5/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : Carry-On";
+            cout << "\nGenre    : US, Thriller Movies";
+            cout << "\nRating   : 6.5/10\n";
+            cout << "\nSynopsis : A mysterious traveler blackmails a TSA";
+            cout << "\n           agent into allowing a dangerous package";
+            cout << "\n           onto a Christmas Eve flight.";
+            cout << "\n===============================================================\n";
 		}
         else if (movie == 4)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Don't Look up";
-            cout << "\nGenre  : Drama Movies";
-			cout << "\nRating : 7.1/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : Don't Look up";
+            cout << "\nGenre    : Drama Movies";
+			cout << "\nRating   : 7.1/10\n";
+            cout << "\nSynopsis : Two low-level astronomers must go on a";
+            cout << "\n           giant media tour to warn humankind of";
+            cout << "\n           an approaching comet that will destroy";
+            cout << "\n           planet Earth.";
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 5)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : The Adam Project";
-            cout << "\nGenre  : Family Movies, US, Sci-Fi Movies";
-            cout << "\nRating : 6.7/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : The Adam Project";
+            cout << "\nGenre    : Family Movies, US, Sci-Fi Movies";
+            cout << "\nRating   : 6.7/10\n";
+            cout << "\nSynopsis : After accidentally crash-landing in";
+            cout << "\n           2022, time-traveling fighter pilot";
+            cout << "\n           Adam Reed teams up with his 12-year-";
+            cout << "\n           old self for a mission to save the";
+            cout << "\n           future.";
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 6)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Bird Box";
-            cout << "\nGenre  : US, Horror Movies, Thriller Movies";
-            cout << "\nRating : 6.6/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : Bird Box";
+            cout << "\nGenre    : US, Horror Movies, Thriller Movies";
+            cout << "\nRating   : 6.6/10\n";
+            cout << "\nSynopsis : Five years after an ominous unseen";
+            cout << "\n           presence drives most of society to";
+            cout << "\n           suicide, a mother and her two";
+            cout << "\n           children make a desperate bid to";
+            cout << "\n           reach safety.";        
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 7)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Back in Action";
-            cout << "\nGenre  : US, Comedy Movies, Action & Adventure Movies";
-            cout << "\nRating : 5.9/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : Back in Action";
+            cout << "\nGenre    : US, Comedy Movies, Action & Adventure Movies";
+            cout << "\nRating   : 5.9/10\n";
+            cout << "\nSynopsis : Former CIA spies Emily and Matt are";
+            cout << "\n           pulled back into espionage after";
+            cout << "\n           their secret identities are exposed.";
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 8)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Leave The World Behind";
-            cout << "\nGenre  : US, Drama Movies, Thriller Movies";
-            cout << "\nRating : 6.4/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : Leave The World Behind";
+            cout << "\nGenre    : US, Drama Movies, Thriller Movies";
+            cout << "\nRating   : 6.4/10\n";
+            cout << "\nSynopsis : A family's getaway to a luxurious";
+            cout << "\n           rental home takes an ominous turn";
+            cout << "\n           when a cyberattack knocks out";
+            cout << "\n           their devices, and two strangers";
+            cout << "\n           appear at their door.";
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 9)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : War Machine";
-            cout << "\nGenre  : US, Sci-Fi Movies, Military Movies";
-            cout << "\nRating : 6.3/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : War Machine";
+            cout << "\nGenre    : US, Sci-Fi Movies, Military Movies";
+            cout << "\nRating   : 6.3/10\n";
+            cout << "\nSynopsis : Follow the final recruits of a";
+            cout << "\n           grueling special ops boot camp";
+            cout << "\n           who encounter a mysterious";
+            cout << "\n           deadly force.";
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 10)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : The Gray Man";
-            cout << "\nGenre  : US, Movies Based on Books, Action & Adventure Movies";
-            cout << "\nRating : 6.5/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : The Gray Man";
+            cout << "\nGenre    : US, Movies Based on Books, Action & Adventure Movies";
+            cout << "\nRating   : 6.5/10\n";
+            cout << "\nSynopsis : When the CIA's most skilled operative,";
+            cout << "\n           whose true identity is known to none,";
+            cout << "\n           accidentally uncovers dark agency secrets, a";
+            cout << "\n           psychopathic former colleague puts a bounty";
+            cout << "\n           on his head, setting off a global manhunt by";
+            cout << "\n           international assassins.";
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 11)
 		{
@@ -224,100 +266,157 @@ void showMovieDetail(int category, int movie)
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Troll";
-            cout << "\nGenre  : Norwegian, Action & Adventure Movies";
-			cout << "\nRating : 5.8/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : Troll";
+            cout << "\nGenre    : Norwegian, Action & Adventure Movies";
+			cout << "\nRating   : 5.8/10\n";
+            cout << "\nSynopsis : Deep in the Dovre mountain, something";
+            cout << "\n           gigantic wakes up after a thousand";
+            cout << "\n           years in captivity. The creature";
+            cout << "\n           destroys everything in its path and";
+            cout << "\n           quickly approaches Oslo.";
+            cout << "\n===============================================================\n";
 		}
         else if (movie == 2)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Under Paris";
-			cout << "\nGenre  : French, Horror Movies, Thriller Movies";
-			cout << "\nRating : 5.2/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : Under Paris";
+			cout << "\nGenre    : French, Horror Movies, Thriller Movies";
+			cout << "\nRating   : 5.2/10\n";
+            cout << "\nSynopsis : To save Paris from a bloodbath, a";
+            cout << "\n           grieving scientist is forced to";
+            cout << "\n           face her tragic past when a giant";
+            cout << "\n           shark appears in the Seine.";
+            cout << "\n===============================================================\n";
 		}
         else if (movie == 3)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Society of The Snow";
-			cout << "\nGenre  : Spanish, Drama Movies, Movies Based on Books";
-			cout << "\nRating : 7.8/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : Society of The Snow";
+			cout << "\nGenre    : Spanish, Drama Movies, Movies Based on Books";
+			cout << "\nRating   : 7.8/10\n";
+            cout << "\nSynopsis : The flight of a rugby team crashes";
+            cout << "\n           on a glacier in the Andes. The few";
+            cout << "\n           passengers who survive the crash";
+            cout << "\n           find themselves in one of the";
+            cout << "\n           world's toughest environments to";
+            cout << "\n           survive.";
+            cout << "\n===============================================================\n";
 		}
         else if (movie == 4)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Exterritorial";
-			cout << "\nGenre  : German, Action & Adventure Movies";
-			cout << "\nRating : 5.8/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : Exterritorial";
+			cout << "\nGenre    : German, Action & Adventure Movies";
+			cout << "\nRating   : 5.8/10\n";
+            cout << "\nSynopsis : When a soldier's son vanishes at a";
+            cout << "\n           US consulate, she illegally remains";
+            cout << "\n           on the premises to search for him,";
+            cout << "\n           unknowingly entangling herself in a";
+            cout << "\n           dangerous conspiracy.";
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 5)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : The Great Flood";
-			cout << "\nGenre  : Korean, Sci-Fi Movies, Drama Movies";
-			cout << "\nRating : 5.4/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : The Great Flood";
+			cout << "\nGenre    : Korean, Sci-Fi Movies, Drama Movies";
+			cout << "\nRating   : 5.4/10\n";
+            cout << "\nSynopsis : A disastrous great flood sweeps the";
+            cout << "\n           planet. On what may be the last day";
+            cout << "\n           on Earth, a desperate fight ensues";
+            cout << "\n           to save a child from a flooding";
+            cout << "\n           apartment.";
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 6)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Nowhere";
-			cout << "\nGenre  : Spanish, Drama Movies, Thriller Movies";
-			cout << "\nRating : 6.3/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : Nowhere";
+			cout << "\nGenre    : Spanish, Drama Movies, Thriller Movies";
+			cout << "\nRating   : 6.3/10\n";
+            cout << "\nSynopsis : A young pregnant woman named Mia";
+            cout << "\n           escapes from a country at war by";
+            cout << "\n           hiding in a maritime container";
+            cout << "\n           aboard a cargo ship. After a";
+            cout << "\n           violent storm, Mia gives birth to";
+            cout << "\n           her child while lost at sea, where";
+            cout << "\n           she must fight to survive.";
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 7)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : The Platform";
-			cout << "\nGenre  : Spanish, Thriller Movies";
-			cout << "\nRating : 7/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : The Platform";
+			cout << "\nGenre    : Spanish, Thriller Movies";
+			cout << "\nRating   : 7/10\n";
+            cout << "\nSynopsis : In a prison where inmates are fed";
+            cout << "\n           on a descending platform, those";
+            cout << "\n           on the upper levels take more";
+            cout << "\n           than their fair share while";
+            cout << "\n           those below are left to starve";
+            cout << "\n           on scraps and one man decides";
+            cout << "\n           to change the system.";
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 8)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Counterattack";
-			cout << "\nGenre  : Mexican, Military Movies, Action & Adventure Movies";
-			cout << "\nRating : 6/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : Contraataque";
+			cout << "\nGenre    : Mexican, Military Movies, Action & Adventure Movies";
+			cout << "\nRating   : 6/10\n";
+            cout << "\nSynopsis : Five friends shopping at the";
+            cout << "\n           US/Mexico border face sicario";
+            cout << "\n           hitmen, but the targets are";
+            cout << "\n           actually Murciélagos.";
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 9)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Ad Vitam";
-			cout << "\nGenre  : French, Crime Movies, Drama Movies";
-			cout << "\nRating : 5.9/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : Ad Vitam";
+			cout << "\nGenre    : French, Crime Movies, Drama Movies";
+			cout << "\nRating   : 5.9/10\n";
+            cout << "\nSynopsis : After escaping an attempted";
+            cout << "\n           murder, Franck Lazareff must";
+            cout << "\n           find his wife Leo, who has";
+            cout << "\n           been kidnapped by a mysterious";
+            cout << "\n           group of armed men. He is";
+            cout << "\n           caught up by his past and";
+            cout << "\n           plunged into a state affair";
+            cout << "\n           that is beyond him.";
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 10)
         {
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle  : Brick";
-			cout << "\nGenre  : German, Thriller Movies, Mystery Movies";
-			cout << "\nRating : 5.5/10\n";
-            cout << "===============================================================\n";
+        	cout << "\nTitle    : Brick";
+            cout << "\nYear     : 2025";
+			cout << "\nGenre    : German, Thriller Movies, Mystery Movies";
+			cout << "\nRating   : 5.5/10\n";
+            cout << "\nSynopsis : A couple whose apartment building";
+            cout << "\n           is suddenly surrounded by a";
+            cout << "\n           mysterious brick wall must work";
+            cout << "\n           with their neighbors to find";
+            cout << "\n           a way out.";
+            cout << "\n===============================================================\n";
 		}
 		else if (movie == 11)
 		{
