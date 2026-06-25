@@ -54,10 +54,10 @@ void menu()
         cout << "           NETFLIX MOVIE EXPLORER\n";
         cout << "========================================================\n\n";
 
-        cout << "  1. Trending Now\n";
-		cout << "  2. Browse Movies by Genre\n";
-        cout << "  3. Search Movie\n";
-        cout << "  4. Exit\n\n";
+        cout << "  [1] Trending Now\n";
+		cout << "  [2] Browse Movies by Genre\n";
+        cout << "  [3] Search Movie\n";
+        cout << "  [4] Exit\n\n";
 
         cout << "========================================================\n";
         do
@@ -336,14 +336,25 @@ void trendingNow()
 
     system("cls");
 
-    cout << "=====================================================\n";
+    cout << "Loading Netflix";
+    Sleep(300);
+    cout << ".";
+    Sleep(300);
+    cout << ".";
+    Sleep(300);
+    cout << ".";
+    Sleep(300);
+
+    system("cls");
+
+    cout << "---------------------------------------------\n";
     titleColor(12);
     cout << "               TRENDING NOW \n";
     titleColor(7);
-    cout << "=====================================================\n\n";
-    cout << "1. English Movies\n";
-    cout << "2. Non-English Movies\n";
-	cout << "3. Back to Main Menu\n";
+    cout << "---------------------------------------------\n";
+    cout << "[1] English Movies\n";
+    cout << "[2] Non-English Movies\n";
+	cout << "[3] Back to Main Menu\n";
     do
     {
         cout << "\nEnter category (1-3): ";
@@ -361,34 +372,34 @@ void trendingNow()
     	cout << "\n===============================================================\n";
         cout << "                     TOP 10 ENGLISH MOVIES\n";
     	cout << "===============================================================\n";
-        cout << "1.  KPOP Demon Hunters\n";
-		cout << "2.  Red Notice\n";
-		cout << "3.  Carry-On\n";
-        cout << "4.  Don't Look up\n";
-        cout << "5.  The Adam Project\n";
-        cout << "6.  Bird Box\n";
-        cout << "7.  Back in Action\n";
-        cout << "8.  Leave The World Behind\n";
-        cout << "9.  War Machine\n";
-        cout << "10. The Gray Man\n";
-		cout << "\n11. Back to Main Menu\n";
+        cout << "[1]  KPOP Demon Hunters\n";
+		cout << "[2]  Red Notice\n";
+		cout << "[3]  Carry-On\n";
+        cout << "[4]  Don't Look up\n";
+        cout << "[5]  The Adam Project\n";
+        cout << "[6]  Bird Box\n";
+        cout << "[7]  Back in Action\n";
+        cout << "[8]  Leave The World Behind\n";
+        cout << "[9]  War Machine\n";
+        cout << "[10] The Gray Man\n";
+		cout << "\n[11] Back to Main Menu\n";
     }
     else if (category == 2)
     {
     	cout << "\n===============================================================\n";
         cout << "                   TOP 10 NON-ENGLISH MOVIES\n";
     	cout << "===============================================================\n";
-        cout << "1.  Troll\n";
-        cout << "2.  Under Paris\n";
-        cout << "3.  Society of The Snow\n";
-        cout << "4.  Exterritorial\n";
-        cout << "5.  The Great Flood\n";
-        cout << "6.  Nowhere\n";
-        cout << "7.  The Platform\n";
-        cout << "8.  Counterattack\n";
-        cout << "9.  Ad Vitam\n";
-        cout << "10. Brick\n";
-		cout << "\n11. Back to Main Menu\n";
+        cout << "[1]  Troll\n";
+        cout << "[2]  Under Paris\n";
+        cout << "[3]  Society of The Snow\n";
+        cout << "[4]  Exterritorial\n";
+        cout << "[5]  The Great Flood\n";
+        cout << "[6]  Nowhere\n";
+        cout << "[7]  The Platform\n";
+        cout << "[8]  Counterattack\n";
+        cout << "[9]  Ad Vitam\n";
+        cout << "[10] Brick\n";
+		cout << "\n[11] Back to Main Menu\n";
     }
     else if (category == 3)
     {
@@ -460,13 +471,13 @@ void browseMoviesByGenre()
     cout << "                    BROWSE MOVIES BY GENRE";
     cout << "\n===============================================================\n";
     cout << "Choose a genre to explore Netflix movies.\n\n";
-    cout << "1. Action\n";
-    cout << "2. Comedy\n";
-    cout << "3. Drama\n";
-    cout << "4. Horror\n";
-    cout << "5. Sci-Fi\n";
-    cout << "6. Thriller\n";
-    cout << "7. Back to Main Menu\n";
+    cout << "[1] Action\n";
+    cout << "[2] Comedy\n";
+    cout << "[3] Drama\n";
+    cout << "[4] Horror\n";
+    cout << "[5] Sci-Fi\n";
+    cout << "[6] Thriller\n";
+    cout << "[7] Back to Main Menu\n";
     do
     {
         cout << "\nEnter genre (1-7): ";
@@ -484,12 +495,12 @@ void browseMoviesByGenre()
         system("cls");
 
         cout << "\n====================== ACTION MOVIES ======================\n";
-        cout << "1. Red Notice\n";
-        cout << "2. The Gray Man\n";
-        cout << "3. Troll\n";
-        cout << "4. Exterritorial\n";
-        cout << "5. Counterattack\n";
-        cout << "6. Back to Main Menu\n";
+        cout << "[1] Red Notice\n";
+        cout << "[2] The Gray Man\n";
+        cout << "[3] Troll\n";
+        cout << "[4] Exterritorial\n";
+        cout << "[5] Counterattack\n";
+        cout << "[6] Back to Main Menu\n";
         do
         {
             cout << "\nSelect movie number (1-6): ";
@@ -536,9 +547,9 @@ void browseMoviesByGenre()
         system("cls");
 
         cout << "\n====================== COMEDY MOVIES ======================\n";
-        cout << "1. Red Notice\n";
-        cout << "2. Back in Action\n";
-        cout << "3. Back to Main Menu\n";
+        cout << "[1] Red Notice\n";
+        cout << "[2] Back in Action\n";
+        cout << "[3] Back to Main Menu\n";
         do
         {
             cout << "\nSelect movie number (1-3): ";
@@ -573,12 +584,12 @@ void browseMoviesByGenre()
         system("cls");
 
         cout << "\n====================== DRAMA MOVIES ======================\n";
-        cout << "1. Don't Look Up\n";
-        cout << "2. Leave The World Behind\n";
-        cout << "3. Society of The Snow\n";
-        cout << "4. Nowhere\n";
-        cout << "5. Ad Vitam\n";
-        cout << "6. Back to Main Menu\n";
+        cout << "[1] Don't Look Up\n";
+        cout << "[2] Leave The World Behind\n";
+        cout << "[3] Society of The Snow\n";
+        cout << "[4] Nowhere\n";
+        cout << "[5] Ad Vitam\n";
+        cout << "[6] Back to Main Menu\n";
         do
         {
             cout << "\nSelect movie number (1-6): ";
@@ -625,9 +636,9 @@ void browseMoviesByGenre()
         system("cls");
 
         cout << "\n====================== HORROR MOVIES ======================\n";
-        cout << "1. Bird Box\n";
-        cout << "2. Under Paris\n";
-        cout << "3. Back to Main Menu\n";
+        cout << "[1] Bird Box\n";
+        cout << "[2] Under Paris\n";
+        cout << "[3] Back to Main Menu\n";
         do
         {
             cout << "\nSelect movie number (1-3): ";
@@ -662,10 +673,10 @@ void browseMoviesByGenre()
         system("cls");
 
         cout << "\n====================== SCI-FI MOVIES ======================\n";
-        cout << "1. The Adam Project\n";
-        cout << "2. War Machine\n";
-        cout << "3. The Great Flood\n";
-        cout << "4. Back to Main Menu\n";
+        cout << "[1] The Adam Project\n";
+        cout << "[2] War Machine\n";
+        cout << "[3] The Great Flood\n";
+        cout << "[4] Back to Main Menu\n";
         do
         {
             cout << "\nSelect movie number (1-4): ";
@@ -704,14 +715,14 @@ void browseMoviesByGenre()
         system("cls");
 
         cout << "\n====================== THRILLER MOVIES ======================\n";
-        cout << "1. Carry-On\n";
-        cout << "2. Bird Box\n";
-        cout << "3. Leave The World Behind\n";
-        cout << "4. Under Paris\n";
-        cout << "5. Nowhere\n";
-        cout << "6. The Platform\n";
-        cout << "7. Brick\n";
-        cout << "8. Back to Main Menu\n";
+        cout << "[1] Carry-On\n";
+        cout << "[2] Bird Box\n";
+        cout << "[3] Leave The World Behind\n";
+        cout << "[4] Under Paris\n";
+        cout << "[5] Nowhere\n";
+        cout << "[6] The Platform\n";
+        cout << "[7] Brick\n";
+        cout << "[8] Back to Main Menu\n";
         do
         {
             cout << "\nSelect movie number (1-8): ";
