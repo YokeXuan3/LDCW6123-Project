@@ -88,7 +88,23 @@ void menu()
                 break;
 
             case 4:
-                cout << "\nThank you for using Netflix Movie Explorer!\n";
+                system("cls");
+
+                cout << "=============================================================\n";
+                titleColor(12);
+                cout << "                     THANK YOU!\n";
+                titleColor(7);
+                cout << "=============================================================\n\n";
+
+                cout << "      Thank you for using Netflix Movie Explorer.\n";
+                cout << "      Hope you found your next favourite movie!\n\n";
+
+                cout << "             Have a great day!\n";
+                cout << "                 Goodbye!\n\n";
+
+                cout << "=============================================================\n";
+
+                Sleep(2500);
                 break;
 
             default:
