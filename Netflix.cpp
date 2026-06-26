@@ -454,14 +454,16 @@ void trendingNow()
 
     system("cls");
 
-    cout << "Loading Netflix";
-    Sleep(300);
-    cout << ".";
-    Sleep(300);
-    cout << ".";
-    Sleep(300);
-    cout << ".";
-    Sleep(300);
+    cout << "Loading Netflix...\n";
+
+    for(int i=0;i<=20;i++)
+    {
+        cout << char(219);
+        Sleep(80);
+    }
+
+    cout << " Done!\n";
+    Sleep(500);
 
     system("cls");
 
@@ -596,14 +598,16 @@ void browseMoviesByGenre()
 {
     system("cls");
 
-    cout << "Loading Netflix";
-    Sleep(300);
-    cout << ".";
-    Sleep(300);
-    cout << ".";
-    Sleep(300);
-    cout << ".";
-    Sleep(300);
+    cout << "Loading Netflix...\n";
+
+    for(int i=0;i<=20;i++)
+    {
+        cout << char(219);
+        Sleep(80);
+    }
+
+    cout << " Done!\n";
+    Sleep(500);
 
     system("cls");
 
@@ -969,14 +973,16 @@ void searchMovie()
 {
     system("cls");
     
-    cout << "Loading Netflix";
-    Sleep(300);
-    cout << ".";
-    Sleep(300);
-    cout << ".";
-    Sleep(300);
-    cout << ".";
-    Sleep(300);
+    cout << "Loading Netflix...\n";
+
+    for(int i=0;i<=20;i++)
+    {
+        cout << char(219);
+        Sleep(80);
+    }
+
+    cout << " Done!\n";
+    Sleep(500);
     
     system("cls");
     
