@@ -444,6 +444,8 @@ void showMovieDetail(int category, int movie)
         	cout << "\nInvalid movie selection!\n";
 		}
     }
+
+    
 }
 
 void trendingNow()
@@ -926,6 +928,40 @@ void browseMoviesByGenre()
 
         browseMoviesByGenre();
         return;
+    }
+
+    int option;
+
+    while (true)
+    {
+        cout << "\n";
+        cout << "1. Browse More Movies\n";
+        cout << "2. Return to Main Menu\n";
+
+        cout << "Enter your choice (1-2): ";
+        cin >> option;
+
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cout << "\nInvalid choice! Please enter a number.\n";
+            continue;
+        }
+
+        if (option == 1)
+        {
+            browseMoviesByGenre();
+            return;
+        }
+        else if (option == 2)
+        {
+            return;
+        }
+        else
+        {
+            cout << "\nInvalid choice! Please enter 1 or 2.\n";
+        }
     }
 }
 
