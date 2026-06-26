@@ -382,7 +382,7 @@ void showMovieDetail(int category, int movie)
             cout << "\nSynopsis : Five friends shopping at the";
             cout << "\n           US/Mexico border face sicario";
             cout << "\n           hitmen, but the targets are";
-            cout << "\n           actually Murciélagos.";
+            cout << "\n           actually MurciÃ©lagos.";
             cout << "\n===============================================================\n";
 		}
 		else if (movie == 9)
@@ -538,26 +538,39 @@ void trendingNow()
 
         showMovieDetail(category, movie);
 
-        int option;
+       int option;
 
-        cout << "\n";
-        cout << "1. Back to Trending Now\n";
-        cout << "2. Back to Main Menu\n";
+        while (true)
+        {
+            cout << "\n";
+            cout << "1. Back to Trending Now\n";
+            cout << "2. Back to Main Menu\n";
 
-        cout << "Enter your choice: ";
-        cin >> option;
+            cout << "Enter your choice (1-2): ";
 
-        if(option == 1)
-        {
-            trendingNow();
-        }
-        else if(option == 2)
-        {
-            return;
-        }
-        else
-        {
-            cout << "\nInvalid choice!\n";
+            cin >> option;
+
+            if (cin.fail())
+            {
+                cin.clear();
+                cin.ignore(1000, '\n');
+                cout << "\nInvalid choice! Please enter a number.\n";
+                continue;
+            }
+
+            if (option == 1)
+            {
+                trendingNow();
+                return;
+            }
+            else if (option == 2)
+            {
+                return;
+            }
+            else
+            {
+                cout << "\nInvalid choice! Please enter 1 or 2.\n";
+            }
         }
 }
 
@@ -960,7 +973,7 @@ void searchMovie()
             {
                 cin.clear();
                 cin.ignore(1000, '\n');
-                cout << "\nInvalid input! Please enter 1 or 2.\n";
+                cout << "\nInvalid choice! Please enter 1 or 2.\n";
             } 
             else if (option == 1) 
             {
@@ -1088,7 +1101,7 @@ void searchMovie()
             {
                 cin.clear();
                 cin.ignore(1000, '\n');
-                cout << "\nInvalid input! Please enter a number.\n";
+                cout << "\nInvalid choice! Please enter a number.\n";
             } 
             else if (choice >= 1 && choice <= foundCount) 
             {
@@ -1111,7 +1124,7 @@ void searchMovie()
                     {
                         cin.clear();
                         cin.ignore(1000, '\n');
-                        cout << "\nInvalid input! Please enter 1 or 2.\n";
+                        cout << "\nInvalid choice! Please enter 1 or 2.\n";
                     } 
                     else if (option == 1) 
                     {
@@ -1173,7 +1186,7 @@ void searchMovie()
             {
                 cin.clear();
                 cin.ignore(1000, '\n');
-                cout << "\nInvalid input! Please enter 1 or 2.\n";
+                cout << "\nInvalid choice! Please enter 1 or 2.\n";
             } 
             else if (option == 1) 
             {
