@@ -1,6 +1,8 @@
 #include <iostream>
 #include <windows.h>
 #include <string>
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 
 void titleColor(int color);      
@@ -9,6 +11,34 @@ void trendingNow();
 void showMovieDetail(int category, int movie);
 void browseMoviesByGenre();
 void searchMovie();
+
+string recommendMovie[10] =
+{
+    "KPOP Demon Hunters",
+    "Red Notice",
+    "Carry-On",
+    "Don't Look Up",
+    "The Adam Project",
+    "Bird Box",
+    "Back in Action",
+    "Leave The World Behind",
+    "War Machine",
+    "The Gray Man"
+};
+
+string recommendRating[10] =
+{
+    "7.4/10",
+    "6.3/10",
+    "6.5/10",
+    "7.1/10",
+    "6.7/10",
+    "6.6/10",
+    "5.9/10",
+    "6.4/10",
+    "6.3/10",
+    "6.5/10"
+};
 
 void welcomeScreen()
 {
@@ -45,15 +75,42 @@ void titleColor(int color)
 
 void menu()
 {
+    srand(time(0));
+
     int choice;
 
     do
     {
         system("cls");
 
+
         cout << "========================================================\n";
         cout << "           NETFLIX MOVIE EXPLORER\n";
         cout << "========================================================\n\n";
+
+        int randomMovie = rand() % 10;
+
+        titleColor(14);
+        cout << "+------------------------------------------------------+\n";
+        cout << "|                     NOW SHOWING                      |\n";
+        cout << "|------------------------------------------------------|\n";
+        titleColor(7);
+
+        cout << "| Movie  : " << recommendMovie[randomMovie];
+
+        for(int i = recommendMovie[randomMovie].length(); i < 38; i++)
+            cout << " ";
+        cout << "      |\n";
+
+        cout << "| Rating : " << recommendRating[randomMovie];
+
+        for(int i = recommendRating[randomMovie].length(); i < 38; i++)
+            cout << " ";
+        cout << "      |\n";
+
+        titleColor(14);
+        cout << "+------------------------------------------------------+\n\n";
+        titleColor(7);
 
         cout << "  [1] Trending Now\n";
 		cout << "  [2] Browse Movies by Genre\n";
