@@ -40,6 +40,7 @@ string recommendRating[10] =
     "6.5/10"
 };
 
+//display welcome screen
 void welcomeScreen()
 {
     system("cls");
@@ -73,6 +74,7 @@ void titleColor(int color)
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
 
+//list of main menu
 void menu()
 {
     srand(time(0));
@@ -122,6 +124,14 @@ void menu()
         {
             cout << " Enter your choice (1-4): ";
             cin >> choice;
+
+            if(cin.fail())
+            {
+                cin.clear();
+                cin.ignore(1000,'\n');
+                cout << "\nInvalid input! Please enter a number.\n";
+                continue;
+            }
 
             if(choice < 1 || choice > 4)
             {
@@ -178,6 +188,7 @@ void menu()
     } while(choice != 4);
 }
 
+//display movie details
 void showMovieDetail(int category, int movie)
 {
     if (category == 1) //English
@@ -227,7 +238,7 @@ void showMovieDetail(int category, int movie)
         	cout << "\n===============================================================\n";
         	cout << "                         MOVIE DETAILS\n";
         	cout << "===============================================================";
-        	cout << "\nTitle    : Don't Look up";
+        	cout << "\nTitle    : Don't Look Up";
             cout << "\nGenre    : Drama Movies";
 			cout << "\nRating   : 7.1/10\n";
             cout << "\nSynopsis : Two low-level astronomers must go on a";
@@ -455,7 +466,7 @@ void showMovieDetail(int category, int movie)
             cout << "\nSynopsis : Five friends shopping at the";
             cout << "\n           US/Mexico border face sicario";
             cout << "\n           hitmen, but the targets are";
-            cout << "\n           actually MurciÃ©lagos.";
+            cout << "\n           actually Murcielagos.";
             cout << "\n===============================================================\n";
 		}
 		else if (movie == 9)
@@ -537,6 +548,14 @@ void trendingNow()
         cout << "\nEnter category (1-3): ";
         cin >> category;
 
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cout << "\nInvalid input! Please enter a number.\n";
+            continue;
+        }
+
         if(category < 1 || category > 3)
         {
             cout << "\nInvalid category! Please try again.\n";
@@ -552,7 +571,7 @@ void trendingNow()
         cout << "[1]  KPOP Demon Hunters\n";
 		cout << "[2]  Red Notice\n";
 		cout << "[3]  Carry-On\n";
-        cout << "[4]  Don't Look up\n";
+        cout << "[4]  Don't Look Up\n";
         cout << "[5]  The Adam Project\n";
         cout << "[6]  Bird Box\n";
         cout << "[7]  Back in Action\n";
@@ -573,7 +592,7 @@ void trendingNow()
         cout << "[5]  The Great Flood\n";
         cout << "[6]  Nowhere\n";
         cout << "[7]  The Platform\n";
-        cout << "[8]  Counterattack\n";
+        cout << "[8]  Contraataque\n";
         cout << "[9]  Ad Vitam\n";
         cout << "[10] Brick\n";
 		cout << "\n[11] Back to Main Menu\n";
@@ -605,6 +624,14 @@ void trendingNow()
     {
         cout << "\nSelect movie number: ";
         cin >> movie;
+
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cout << "\nInvalid input! Please enter a number.\n";
+            continue;
+        }
 
         if(movie < 1 || movie > maxMovie)
         {
@@ -651,6 +678,7 @@ void trendingNow()
         }
 }
 
+//browse movie by genre
 void browseMoviesByGenre()
 {
     system("cls");
@@ -686,6 +714,14 @@ void browseMoviesByGenre()
         cout << "\nEnter genre (1-7): ";
         cin >> genre;
 
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cout << "\nInvalid input! Please enter a number.\n";
+            continue;
+        }
+
         if(genre < 1 || genre > 7)
         {
             cout << "\nInvalid genre selection! Please try again.\n";
@@ -702,12 +738,20 @@ void browseMoviesByGenre()
         cout << "[2] The Gray Man\n";
         cout << "[3] Troll\n";
         cout << "[4] Exterritorial\n";
-        cout << "[5] Counterattack\n";
+        cout << "[5] Contraataque\n";
         cout << "[6] Back to Main Menu\n";
         do
         {
             cout << "\nSelect movie number (1-6): ";
             cin >> movie;
+
+            if (cin.fail())
+            {
+                cin.clear();
+                cin.ignore(1000, '\n');
+                cout << "\nInvalid input! Please enter a number.\n";
+                continue;
+            }
 
             if(movie < 1 || movie > 6)
             {
@@ -758,6 +802,14 @@ void browseMoviesByGenre()
             cout << "\nSelect movie number (1-3): ";
             cin >> movie;
 
+            if (cin.fail())
+            {
+                cin.clear();
+                cin.ignore(1000, '\n');
+                cout << "\nInvalid input! Please enter a number.\n";
+                continue;
+            }
+
             if(movie < 1 || movie > 3)
             {
                 cout << "\nInvalid movie selection! Please try again.\n";
@@ -797,6 +849,14 @@ void browseMoviesByGenre()
         {
             cout << "\nSelect movie number (1-6): ";
             cin >> movie;
+
+            if (cin.fail())
+            {
+                cin.clear();
+                cin.ignore(1000, '\n');
+                cout << "\nInvalid input! Please enter a number.\n";
+                continue;
+            }
 
             if(movie < 1 || movie > 6)
             {
@@ -847,6 +907,14 @@ void browseMoviesByGenre()
             cout << "\nSelect movie number (1-3): ";
             cin >> movie;
 
+            if (cin.fail())
+            {
+                cin.clear();
+                cin.ignore(1000, '\n');
+                cout << "\nInvalid input! Please enter a number.\n";
+                continue;
+            }
+
             if(movie < 1 || movie > 3)
             {
                 cout << "\nInvalid movie selection! Please try again.\n";
@@ -884,6 +952,14 @@ void browseMoviesByGenre()
         {
             cout << "\nSelect movie number (1-4): ";
             cin >> movie;
+
+            if (cin.fail())
+            {
+                cin.clear();
+                cin.ignore(1000, '\n');
+                cout << "\nInvalid input! Please enter a number.\n";
+                continue;
+            }
 
             if(movie < 1 || movie > 4)
             {
@@ -930,6 +1006,14 @@ void browseMoviesByGenre()
         {
             cout << "\nSelect movie number (1-8): ";
             cin >> movie;
+
+            if (cin.fail())
+            {
+                cin.clear();
+                cin.ignore(1000, '\n');
+                cout << "\nInvalid input! Please enter a number.\n";
+                continue;
+            }
 
             if(movie < 1 || movie > 8)
             {
@@ -1026,6 +1110,7 @@ void browseMoviesByGenre()
     }
 }
 
+//search movie by title
 void searchMovie()
 {
     system("cls");
@@ -1126,7 +1211,7 @@ void searchMovie()
         "KPOP Demon Hunters",
         "Red Notice",
         "Carry-On",
-        "Don't Look up",
+        "Don't Look Up",
         "The Adam Project",
         "Bird Box",
         "Back in Action",
@@ -1162,7 +1247,7 @@ void searchMovie()
         "The Great Flood",
         "Nowhere",
         "The Platform",
-        "Counterattack",
+        "Contraataque",
         "Ad Vitam",
         "Brick"
     };
