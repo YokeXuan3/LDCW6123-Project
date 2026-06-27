@@ -798,7 +798,7 @@ void browseMoviesByGenre()
             cout << "\nSelect movie number (1-6): ";
             cin >> movie;
 
-            if(movie < 1 || movie > 3)
+            if(movie < 1 || movie > 6)
             {
                 cout << "\nInvalid movie selection! Please try again.\n";
             }
